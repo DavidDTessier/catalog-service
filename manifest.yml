@@ -1,0 +1,9 @@
+applications:
+- path: .
+  memory: 512MB
+  instances: 1
+  name: dt-catalog-service
+  disk_quota: 1024M
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  env:
+    GOPACKAGENAME: dt-catalog-service
